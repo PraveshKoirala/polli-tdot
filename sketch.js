@@ -4,7 +4,7 @@ let acumin;
 let img1, img2;
 let resets, back, settings, undo;
 
-let page = 1;
+let page = 3;
 let startTime;
 
 function preload() {
