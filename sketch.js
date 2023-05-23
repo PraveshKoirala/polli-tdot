@@ -7,6 +7,25 @@ let resets, back, settings, undo;
 let page = 3;
 let startTime;
 
+// This fixed it, preferably this would be hidden away though
+document.addEventListener('touchstart', {});
+/* prevents the mobile browser from processing some default
+ * touch events, like swiping left for "back" or scrolling
+ * the page.
+ */
+function touchStarted(){
+  return false;
+}
+
+function touchMoved(){
+  return false;
+}
+
+function touchEnded(){
+  return false;
+}
+
+
 function preload() {
   polli = loadImage('assets/polli.png');
   acumin = loadFont('assets/acumin.ttf');
