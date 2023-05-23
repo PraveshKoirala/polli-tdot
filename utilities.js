@@ -68,6 +68,12 @@ function mouseClicked() {
   return false;
 }
 
+function touchEnded(){
+  mouseClicked();
+  return false;
+}
+
+
 function drawText(t, size, sx, sy, bx, by, col=0,
                   alignt='center', alignh='center', font=''){
   fill (col);

@@ -21,11 +21,6 @@ function touchMoved(){
   return false;
 }
 
-function touchEnded(){
-  return false;
-}
-
-
 function preload() {
   polli = loadImage('assets/polli.png');
   acumin = loadFont('assets/acumin.ttf');
